@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+* {
+	font-family: 'Oswald', 'Verdana', sans-serif;
+	box-sizing: border-box;
+	font-weight: normal;
+	color: #f4f4f4;
+}
+
+body::-webkit-scrollbar,
+.table-scroll::-webkit-scrollbar {
+   display: none;
+}
+
+body {
+	background-color: #011725;
+    min-height: 100vh;
+}
+
+.content {
+	margin: 0 auto;
+	padding: 6.25rem 2.5rem;
+	max-width: 800px;
+	height: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.hello {
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.semantic {
+    margin-bottom: 4rem;
+}
+
+header,
+.introduction {
+    margin-bottom: 4rem;
+}
+
+.semantic:last-child .text:last-child,
+.award .text:last-child {
+	margin-bottom: 0rem;
+}
+
+h3,
+p,
+a,
+.text {
+    font-family: 'Verdana', sans-serif;
+    font-size: 1.25rem;
+}
+
+h3 {
+    font-size: 2rem;
+	line-height: 2rem;
+    font-weight: bold;
+	margin: 0 0 1rem 0;
+    text-transform: uppercase;
+}
+
+.text {
+    line-height: 1.875rem;
+}
+
+.text,
+.links {
+	margin: 0rem 0rem .75rem 0rem;
+}
+
+.subheading {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    margin-bottom: 1.5rem;
+}
+
+@keyframes ticker {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .ticker {
+    background: #5eaef3;
+    font-family: system-ui;
+    font-size: 24px;
+    max-width: 40em;
+    overflow: hidden;
+    overflow: hidden;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%) rotate(-1deg);
+    width: 100vw;
+    max-width: 2600px;
+  }
+
+  .ticker__in {
+    display: flex;
+    width: fit-content;
+    animation: ticker 10s linear infinite;
+    -webkit-transform-style: preserve-3d; /* Фикс возможного глюка с морганием в Сафари */
+  }
+
+  .ticker__item {
+    color: #011725;
+    padding: .5em .75em;
+    white-space: nowrap;
+    -webkit-backface-visibility: hidden; /* Фикс возможного глюка с морганием в Сафари */
+  }
+
+@media (width <= 720px) {
+    .content {
+        padding: 2rem 1rem;
+    }
+
+    header {
+        display: block;
+    }
+    
+    .hello {
+        margin-bottom: 2rem;
+        flex-wrap: wrap;
+    }
+
+    h1 {
+        height: auto;
+    }
+    
+    .col-9 {
+        grid-column: 1 / 13;
+    }
+    
+    .col-3 {
+        grid-column: 1 / 13;
+    }
+
+    .images {
+        justify-content: flex-start;
+        padding: 0.75rem 0 .5rem 0;
+    }
+
+    .images img {
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+    }
+}

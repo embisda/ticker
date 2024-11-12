@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <title>Бегущая строка</title>
+	<link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+<body>
+<div class="content">
+    <header>
+        <div class="hello">
+            <h1>Бесконечная бегущая строка</h1>
+        </div>
+    </header>
+    <main>
+		<div class="semantic introduction">
+            <p class="text subheading">Зацикленная по кругу бегущая строка на чистом CSS</p>
+            <div class="ticker">
+                <div class="ticker__in">
+                    <span class="ticker__item">продакт</span>
+                    <span class="ticker__item">проджект</span>
+                    <span class="ticker__item">дизайнер</span>
+                    <span class="ticker__item">кодер</span>
+                    <span class="ticker__item">организатор</span>
+                    <span class="ticker__item">контент-менеджер</span>
+                    <span class="ticker__item">редактор</span>
+                    <span class="ticker__item">концертный менеджер</span>
+                    <span class="ticker__item">подкастер</span>
+                    <span class="ticker__item">аналитик</span>
+                    <span class="ticker__item">андеррайтер</span>
+    
+                    <span class="ticker__item">продакт</span>
+                    <span class="ticker__item">проджект</span>
+                    <span class="ticker__item">дизайнер</span>
+                    <span class="ticker__item">кодер</span>
+                    <span class="ticker__item">организатор</span>
+                    <span class="ticker__item">контент-менеджер</span>
+                    <span class="ticker__item">редактор</span>
+                    <span class="ticker__item">концертный менеджер</span>
+                    <span class="ticker__item">подкастер</span>
+                    <span class="ticker__item">аналитик</span>
+                    <span class="ticker__item">андеррайтер</span>
+                </div>
+            </div> 
+        </div>
+    </main>
+    <footer>
+        
+    </footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
+<script>
+    var app = new Vue({
+		el: '#app',
+		data: {
+			projects: [
+                /*{
+                    year: '',
+                    name: '',
+                    description: '',
+                    links: [
+                        {
+                            www: '',
+                            wwwname: '',
+                        },
+                    ]
+                },
+                */
+            ],
+        },
+		computed: {
+			
+		}
+	});
+</script>
+</body>
+</html>
